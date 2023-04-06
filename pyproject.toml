@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "desafio-backend-main"
+version = "0.1.0"
+description = ""
+authors = ["Matheus Feu  <101346300+Havokzbr@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "desafio_backend_main"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+gitpython = "^3.1.31"
+sqlalchemy = "^2.0.9"
+flask = {version = "^2.0.2", extras = ["async"]}
+
+
+[tool.poetry.group.dev.dependencies]
+alembic = "^1.10.3"
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
